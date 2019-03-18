@@ -24,5 +24,10 @@ function delete_sport($bdd,$idsport)
 {
 	$reqDeletesport=$bdd->query("delete from sport where idsport=".$idsport);
 }
+function NbSports($bdd)
+{
+	$article=$bdd->query("Select count(*) as nb  from sport");
+	return $article->fetch();
+}
 
 ?>

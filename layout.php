@@ -215,8 +215,19 @@
                         <a href="#"><img src="tmp/images/logo.png" alt="">
                         </a>
                         <ul>
-                            <li><span>105435</span> Articles</li>
-                            <li><span>10</span> Sports </li>
+                            <li><span>
+							<?php
+							require_once 'models/articlesModel.php';
+							$nb= NbArticles($bdd);
+							echo $nb['nb'];
+							?>
+							</span> Articles</li>
+                            <li><span>
+							<?php
+							require_once 'models/sportsModel.php';
+							$nb= NbSports($bdd);
+							echo $nb['nb'];
+							?></span> Sports </li>
                         </ul>
                     </div>
                 </div>

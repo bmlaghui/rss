@@ -12,8 +12,12 @@ function sports($bdd)
                         <h3>Liste des sports</h3>
                         <p>Découvrez les nouvelles infos </p>
                     </div>
+					
                     <table class="myTable">
                         <tbody>
+						<tr>
+						<td colspan=5><a class="btn btn-warning" style="float:right" href="index.php?module=sports&action=form_add">Ajouter un nouveau sport</a>
+</td></tr>
                             <tr>
                                 <th>#</th>
                                 <th>Sport</th>

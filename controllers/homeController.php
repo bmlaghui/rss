@@ -6,7 +6,7 @@ else
 {$action='home';}
 switch($action)
 {
-	case 'home': home(); break;
+	case 'home': home($bdd); break;
 	case 'form_inscription': form_inscription(); break;
 	case 'form_connexion' : form_connexion(); break;
 
